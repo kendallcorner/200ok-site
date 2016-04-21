@@ -1,10 +1,8 @@
 body {
   font-size:16px;
 }
-@media (min-width:768px) {
-  .navbar-brand img {
-    width: 96px;
-  }
+.navbar-brand img {
+  height: 40px;
 }
 .section-title a {
   text-decoration: underline;
@@ -22,4 +20,25 @@ article h3 {
 }
 article li {
   line-height: 1.8;
+}
+
+.sponsor-row {
+  padding: 2em;
+}
+
+.sponsor-row-description {
+  padding: 1em;
+}
+
+.schedule-time {
+  text-align: center;
+  background: #EE3924;
+}
+
+.schedule-event {
+  text-align: center;
+}
+
+.talk-title {
+  margin: 1em;
 }
