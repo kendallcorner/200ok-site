@@ -19,7 +19,8 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet" type="text/css">
   <link href="/assets/css/200ok.css" rel="stylesheet">
-  
+  <link href="/assets/css/jqcloud.css" rel="stylesheet">
+
 </head>
 
 <!-- Navigation -->
@@ -36,12 +37,11 @@
     <!-- navbar-collapse -->
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="btn btn-primary btn-lg" href="https://ti.to/techlahoma/200ok-2017">Tickets</a></li>
-        <!-- <li><a class="page-scroll" href="/#schedule">Schedule</a></li> -->
-        <!-- <li><a class="page-scroll" href="/#speakers">Speakers</a></li> -->
-        <li><a class="page-scroll" href="/#location">Location</a></li>
-        <!-- <li><a class="page-scroll" href="/#stay">Stay</a></li> -->
+        <li><a class="btn btn-primary btn-lg" href="https://ti.to/techlahoma/200ok-2017">Buy Tickets</a></li>
         <li><a class="page-scroll" href="/#sponsors">Sponsors</a></li>
+        <li><a class="page-scroll" href="/#speakers">Speakers</a></li>
+        <li><a class="page-scroll" href="/#location">Location</a></li>
+        <li><a class="page-scroll" href="/#schedule">Schedule</a></li>
         <li><a class="page-scroll" href="/#coc">Code of Conduct</a></li>
       </ul>
     </div>
@@ -61,28 +61,32 @@
       <div class="row">
         <div class="col-sm-3">
           <div class="speaker-item"> <a href="#">
-            <figure class="speaker accent-bg"> <img src="/assets/media/speakers/gregavola.jpg" alt="Speaker" class="img-responsive center-block" height="500" width="500">
+            <figure class="speaker accent-bg"> <img src="/assets/media/speakers/kanatbekt.jpg" alt="Speaker" class="img-responsive center-block" height="500" width="500">
               <figcaption>
-                <p class="text-uppercase accent">3:20pm-4:10pm</p>
+                <p class="text-uppercase accent">2:20pm Full Talk</p>
                 <!-- <p>04/10/2016 - 3PM</p> -->
               </figcaption>
             </figure>
             </a>
             <ul class="list-inline social-buttons">
-              <li> <a class="fa fa-twitter fa-lg" href="https://twitter.com/gregavola" target="_blank"></a> </li>
-              <li> <a class="fa fa-linkedin fa-lg" href="https://www.linkedin.com/in/gregavola" target="_blank"></a> </li>
-              <li> <a class="fa fa-github fa-lg" href="https://github.com/gregavola" target="_blank"></a> </li>
+              <li> <a class="fa fa-twitter fa-lg" href="https://twitter.com/presidentkanat" target="_blank"></a></li> 
+              <li> <a class="fa fa-external-link fa-lg" href="https://blog.bekt.net/" target="_blank"></a></li> 
+              <li> <a class="fa fa-github fa-lg" href="https://github.com/Bekt" target="_blank"></a></li> 
             </ul>
           </div>
         </div>
         <div class="col-sm-9">
-          <h2 class="accent"><i class="fa fa-star"></i> Greg Avola</h2>
-          <h3 class="talktitle">Untappd, One Beer to Rule Them All</h3>
+          <h2 class="accent"><i class="fa fa-star"></i> Kanat Bekt</h2>
+          <h3 class="talktitle">
+            <span style='color: #3281C4; font-weight: bold;'>Full-length Talk:</span>
+            Our Journey With Microservices
+          </h3>
           <hr class="border-light mrgn-30-top">
-          <p class="lead accent"><p>In this talk, Greg Avola will share his story about building a company Untappd from the ground up. Greg will share his insights into how him and his partner Tim Mather focused on build a community platform, while working part-time, to over 3 million users and to a recent partnership with Next Glass. Greg will also share the technology behind the company and tools that he build to help manage a growing Untappd infrastructure both of the server level all the way to the App level, using technologies like Cordova (Phonegap) to deliver a cross platform experience for their mobile apps.</p>
+          <p class="lead accent"><p>The microservices architecture has been around for decades, but has recently started becoming a buzzword every organization seems to be using nowadays. This pattern is loosely tied to the emergence of containerization technologies such as Docker and Kubernetes. Engineers at SupplyPike adopted the architecture from the ground up when we had 2-3 engineers. Now that we have over 30 engineers, we want to share some of our very interesting journey with others.</p>
+<p>We will discuss common pitfalls we have faced including but not limited to production setup, standardization, development and deployment cycles, scalability, performance, monitoring and alerting.</p>
 </p>
           <hr class="border-light mrgn-30-top">
-          <p>Living in the craft beer haven of New York City, Greg is the CTO and Co-Founder for Untappd. After experiencing Rare Vos for the first time, he instantly fell in love with craft beer. While some people enjoy reading books or watching movies, Greg's passion is to code. With that being said, after Tim and Greg came up with the idea of Untappd, Greg had a working prototype the next day. Being able to combine his passion for development and craft beer allowed Untappd to be born. In January of 2016, Untappd merged with Next Glass which allowed Greg to work on Untappd in a full-time role as CTO of both companies. Prior to Untappd, Greg was a Senior Software Engineer at ABC News in New York City responsible for mobile and web products.</p>
+          <p>Kanat a lead infrastructure engineer of SupplyPike in Fayetteville, AR. Among many hats he wears, he is particularly interested in building the right culture, both technical and non-technical, in the fast growing environment. As a true hacker at heart, Kanat constantly builds and explores various technologies. Previously, he has started a technology company and worked for companies like Google, AWS, Amazon. Feel free to reach out to him to talk all and everything about technology.</p>
         </div>
       </div>
       <!-- /.Speaker 01 -->
@@ -96,6 +100,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <script src="assets/js/bootstrap.min.js"></script> 
 <script src="assets/js/event01.js"></script> 
+<script src="assets/js/jqcloud-1.0.4.min.js"></script>
 
 <!-- Custom styles for Google Map --> 
 <script src="https://maps.googleapis.com/maps/api/js"></script> 
@@ -110,10 +115,19 @@
 <!-- Background Video --> 
 <script src="assets/plugins/bgvideo/backgroundVideo.min.js"></script> 
 <script>
+  const companies = [
+    {text: "Libiny Solutions", weight: 3, link: "http://libiny.com/"},
+    {text: "codesy", weight: 2, link: "https://www.codesy.io"},
+    {text: "CaseStack", weight: 1, link: "http://casestack.io/"},
+    {text: "BigWing", weight: 3, link: "https://bigwing.com/"},
+    {text: "Station8", weight: 2, link: "http://station8branding.com/"},
+    {text: "SportSmith", weight: 2, link: "https://www.sportsmith.net/"}
+  ];
   $(document).ready(function() {
       $('#bgvideo').backgroundVideo({
           pauseVideoOnViewLoss: false
       });
+      $('#supporting-companies-cloud').jQCloud(companies);
   });
 </script>
 </body>

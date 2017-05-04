@@ -19,7 +19,8 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet" type="text/css">
   <link href="/assets/css/200ok.css" rel="stylesheet">
-  
+  <link href="/assets/css/jqcloud.css" rel="stylesheet">
+
 </head>
 
 <!-- Navigation -->
@@ -36,12 +37,11 @@
     <!-- navbar-collapse -->
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="btn btn-primary btn-lg" href="https://ti.to/techlahoma/200ok-2017">Tickets</a></li>
-        <!-- <li><a class="page-scroll" href="/#schedule">Schedule</a></li> -->
-        <!-- <li><a class="page-scroll" href="/#speakers">Speakers</a></li> -->
-        <li><a class="page-scroll" href="/#location">Location</a></li>
-        <!-- <li><a class="page-scroll" href="/#stay">Stay</a></li> -->
+        <li><a class="btn btn-primary btn-lg" href="https://ti.to/techlahoma/200ok-2017">Buy Tickets</a></li>
         <li><a class="page-scroll" href="/#sponsors">Sponsors</a></li>
+        <li><a class="page-scroll" href="/#speakers">Speakers</a></li>
+        <li><a class="page-scroll" href="/#location">Location</a></li>
+        <li><a class="page-scroll" href="/#schedule">Schedule</a></li>
         <li><a class="page-scroll" href="/#coc">Code of Conduct</a></li>
       </ul>
     </div>
@@ -61,29 +61,31 @@
       <div class="row">
         <div class="col-sm-3">
           <div class="speaker-item"> <a href="#">
-            <figure class="speaker accent-bg"> <img src="/assets/media/speakers/mykebates.jpeg" alt="Speaker" class="img-responsive center-block" height="500" width="500">
+            <figure class="speaker accent-bg"> <img src="/assets/media/speakers/vancelucas.png" alt="Speaker" class="img-responsive center-block" height="500" width="500">
               <figcaption>
-                <p class="text-uppercase accent">Lightning Talk, 1:20pm-2:10pm</p>
+                <p class="text-uppercase accent">10:00am Full Talk</p>
                 <!-- <p>04/10/2016 - 3PM</p> -->
               </figcaption>
             </figure>
             </a>
             <ul class="list-inline social-buttons">
-              <li> <a class="fa fa-twitter fa-lg" href="http://twitter.com/mykebates" target="_blank"></a> </li>
-              <li> <a class="fa fa-linkedin fa-lg" href="https://www.linkedin.com/in/mykebates" target="_blank"></a> </li>
-              <li> <a class="fa fa-github fa-lg" href="https://github.com/mykebates/" target="_blank"></a> </li>
+              <li> <a class="fa fa-twitter fa-lg" href="https://twitter.com/vlucas" target="_blank"></a></li> 
+              <li> <a class="fa fa-external-link fa-lg" href="http://vancelucas.com/" target="_blank"></a></li> 
+              <li> <a class="fa fa-github fa-lg" href="https://github.com/vlucas" target="_blank"></a></li> 
             </ul>
           </div>
         </div>
         <div class="col-sm-9">
-          <h2 class="accent"><i class="fa fa-star"></i> Myke Bates</h2>
-          <h3 class="talktitle">Rapid Prototyping: Build Rome in an Hour</h3>
+          <h2 class="accent"><i class="fa fa-star"></i> Vance Lucas</h2>
+          <h3 class="talktitle">
+            <span style='color: #3281C4; font-weight: bold;'>Full-length Talk:</span>
+            Effective Browser JavaScript Debugging
+          </h3>
           <hr class="border-light mrgn-30-top">
-          <p class="lead accent"><p>The day TurnTable.fm shut down was the day our office lost one of our favorite ways to pass the day. TurnTable was a really simple idea that let you host a room where 5 DJs would spin their favorite jams to a crowd in a round-robin fashion complete with all the usual social aspects (chat, like, lame, share, etc).</p>
-<p>After a long while of mourning we finally decided to try and fill the TurnTable sized hole in our hearts. A few weeks later we finally had an idea of how we might be able to accomplish this. One lunch hour later a prototype was finished. Since then the prototype has evolved into a fully functioning web app known as Stomp. In this presentation we’ll cover the technology bits used to tie together an interesting idea in such a short amount of time and hopefully inspire you to think outside of the box to find simple solutions the next time a wild idea pops into your head.</p>
+          <p class="lead accent"><p>Did you know that your web browser has a full suite of built-in JavaScript debugging tools? With the developer tools in Chrome, Firefox, and Safari, you can debug JavaScript on the fly with breakpoints, watch expressions, an interactive REPL with autocomplete, and much more. Learn how to troubleshoot bugs and memory leaks like a pro, armed with the same web browser you already use everyday - no extra plugins or downloads required.</p>
 </p>
           <hr class="border-light mrgn-30-top">
-          <p>Myke Bates is a web mastering, movie quoting, horror flick loving, metal music shredding, community building, music platform creating, front/back-end developing, pizza devouring, all around epically bad-ass tech junkie. Myke's a midwest mofo with code dripping from his fingers and stars in his eyes. Listen to him, collab with him, be inspired by him - or don't; this is a bio paragraph not a life coach.</p>
+          <p>Vance Lucas is a seasoned programmer with nearly two decades of web programming experience dating back to 1998. Vance is a full stack polyglot programmer who currently uses JavaScript/Node.js, PHP, and Ruby. Vance created and maintains the very popular phpdotenv package, Spot ORM, Valitron, and Frisby.js open-source projects, among many others. Vance is the co-founder of the Techlahoma Foundation, Oklahoma City JavaScript User Group (OKC.js), and co-organizer of the annual ThunderPlains Developer Conference. </p>
         </div>
       </div>
       <!-- /.Speaker 01 -->
@@ -97,6 +99,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <script src="assets/js/bootstrap.min.js"></script> 
 <script src="assets/js/event01.js"></script> 
+<script src="assets/js/jqcloud-1.0.4.min.js"></script>
 
 <!-- Custom styles for Google Map --> 
 <script src="https://maps.googleapis.com/maps/api/js"></script> 
@@ -111,10 +114,19 @@
 <!-- Background Video --> 
 <script src="assets/plugins/bgvideo/backgroundVideo.min.js"></script> 
 <script>
+  const companies = [
+    {text: "Libiny Solutions", weight: 3, link: "http://libiny.com/"},
+    {text: "codesy", weight: 2, link: "https://www.codesy.io"},
+    {text: "CaseStack", weight: 1, link: "http://casestack.io/"},
+    {text: "BigWing", weight: 3, link: "https://bigwing.com/"},
+    {text: "Station8", weight: 2, link: "http://station8branding.com/"},
+    {text: "SportSmith", weight: 2, link: "https://www.sportsmith.net/"}
+  ];
   $(document).ready(function() {
       $('#bgvideo').backgroundVideo({
           pauseVideoOnViewLoss: false
       });
+      $('#supporting-companies-cloud').jQCloud(companies);
   });
 </script>
 </body>

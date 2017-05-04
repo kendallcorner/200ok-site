@@ -19,7 +19,8 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet" type="text/css">
   <link href="/assets/css/200ok.css" rel="stylesheet">
-  
+  <link href="/assets/css/jqcloud.css" rel="stylesheet">
+
 </head>
 
 <!-- Navigation -->
@@ -36,12 +37,11 @@
     <!-- navbar-collapse -->
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="btn btn-primary btn-lg" href="https://ti.to/techlahoma/200ok-2017">Tickets</a></li>
-        <!-- <li><a class="page-scroll" href="/#schedule">Schedule</a></li> -->
-        <!-- <li><a class="page-scroll" href="/#speakers">Speakers</a></li> -->
-        <li><a class="page-scroll" href="/#location">Location</a></li>
-        <!-- <li><a class="page-scroll" href="/#stay">Stay</a></li> -->
+        <li><a class="btn btn-primary btn-lg" href="https://ti.to/techlahoma/200ok-2017">Buy Tickets</a></li>
         <li><a class="page-scroll" href="/#sponsors">Sponsors</a></li>
+        <li><a class="page-scroll" href="/#speakers">Speakers</a></li>
+        <li><a class="page-scroll" href="/#location">Location</a></li>
+        <li><a class="page-scroll" href="/#schedule">Schedule</a></li>
         <li><a class="page-scroll" href="/#coc">Code of Conduct</a></li>
       </ul>
     </div>
@@ -86,7 +86,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://200ok.us/2017/03/08/hello-world/" data-id="cj23l4ta2000etue5fvw4e2uf" class="article-share-link">Share</a>
+      <a data-url="http://200ok.us/2017/03/08/hello-world/" data-id="cj254entf000erve561j8xu47" class="article-share-link">Share</a>
       
       
     </footer>
@@ -101,6 +101,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <script src="assets/js/bootstrap.min.js"></script> 
 <script src="assets/js/event01.js"></script> 
+<script src="assets/js/jqcloud-1.0.4.min.js"></script>
 
 <!-- Custom styles for Google Map --> 
 <script src="https://maps.googleapis.com/maps/api/js"></script> 
@@ -115,10 +116,19 @@
 <!-- Background Video --> 
 <script src="assets/plugins/bgvideo/backgroundVideo.min.js"></script> 
 <script>
+  const companies = [
+    {text: "Libiny Solutions", weight: 3, link: "http://libiny.com/"},
+    {text: "codesy", weight: 2, link: "https://www.codesy.io"},
+    {text: "CaseStack", weight: 1, link: "http://casestack.io/"},
+    {text: "BigWing", weight: 3, link: "https://bigwing.com/"},
+    {text: "Station8", weight: 2, link: "http://station8branding.com/"},
+    {text: "SportSmith", weight: 2, link: "https://www.sportsmith.net/"}
+  ];
   $(document).ready(function() {
       $('#bgvideo').backgroundVideo({
           pauseVideoOnViewLoss: false
       });
+      $('#supporting-companies-cloud').jQCloud(companies);
   });
 </script>
 </body>

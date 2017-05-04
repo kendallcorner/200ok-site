@@ -19,7 +19,8 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet" type="text/css">
   <link href="/assets/css/200ok.css" rel="stylesheet">
-  
+  <link href="/assets/css/jqcloud.css" rel="stylesheet">
+
 </head>
 
 <!-- Navigation -->
@@ -36,12 +37,11 @@
     <!-- navbar-collapse -->
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="btn btn-primary btn-lg" href="https://ti.to/techlahoma/200ok-2017">Tickets</a></li>
-        <!-- <li><a class="page-scroll" href="/#schedule">Schedule</a></li> -->
-        <!-- <li><a class="page-scroll" href="/#speakers">Speakers</a></li> -->
-        <li><a class="page-scroll" href="/#location">Location</a></li>
-        <!-- <li><a class="page-scroll" href="/#stay">Stay</a></li> -->
+        <li><a class="btn btn-primary btn-lg" href="https://ti.to/techlahoma/200ok-2017">Buy Tickets</a></li>
         <li><a class="page-scroll" href="/#sponsors">Sponsors</a></li>
+        <li><a class="page-scroll" href="/#speakers">Speakers</a></li>
+        <li><a class="page-scroll" href="/#location">Location</a></li>
+        <li><a class="page-scroll" href="/#schedule">Schedule</a></li>
         <li><a class="page-scroll" href="/#coc">Code of Conduct</a></li>
       </ul>
     </div>
@@ -61,29 +61,31 @@
       <div class="row">
         <div class="col-sm-3">
           <div class="speaker-item"> <a href="#">
-            <figure class="speaker accent-bg"> <img src="/assets/media/speakers/carmenlong.jpeg" alt="Speaker" class="img-responsive center-block" height="500" width="500">
+            <figure class="speaker accent-bg"> <img src="/assets/media/speakers/joshhamilton.png" alt="Speaker" class="img-responsive center-block" height="500" width="500">
               <figcaption>
-                <p class="text-uppercase accent">Lightning Talk, 1:20pm-2:10pm</p>
+                <p class="text-uppercase accent">Lightning Talk</p>
                 <!-- <p>04/10/2016 - 3PM</p> -->
               </figcaption>
             </figure>
             </a>
             <ul class="list-inline social-buttons">
-              <li> <a class="fa fa-twitter fa-lg" href="http://twitter.com/carmalou" target="_blank"></a> </li>
-              <li> <a class="fa fa-linkedin fa-lg" href="https://www.linkedin.com/in/carmen-long-77382376" target="_blank"></a> </li>
-              <li> <a class="fa fa-github fa-lg" href="https://github.com/carmalou" target="_blank"></a> </li>
+              <li> <a class="fa fa-twitter fa-lg" href="https://twitter.com/nearbycoder" target="_blank"></a></li> 
+              
+              <li> <a class="fa fa-github fa-lg" href="https://github.com/nearbycoder" target="_blank"></a></li> 
             </ul>
           </div>
         </div>
         <div class="col-sm-9">
-          <h2 class="accent"><i class="fa fa-star"></i> Carmen Long</h2>
-          <h3 class="talktitle">Building your first Ionic App in 5 Minutes</h3>
+          <h2 class="accent"><i class="fa fa-star"></i> Josh Hamilton</h2>
+          <h3 class="talktitle">
+            <span style='color: #3281C4; font-weight: bold;'>Lighting Talk:</span>
+            Side Projects - The Pursuit of Happyness
+          </h3>
           <hr class="border-light mrgn-30-top">
-          <p class="lead accent"><p>This mix of code and discussion will introduce developers to Ionic. Ionic is a friendly framework designed to build iOS and Android apps using Angular. With thorough and easy-to-read documentation, Ionic is the perfect start to mobile development for new and senior devs, alike.</p>
+          <p class="lead accent"><p>Developing doesn’t have to be a 9 to 5 job. Finding just thirty minutes to an hour a day to work on a side project can not only improve your outlook on developing but also enhance your portfolio. In this talk we will cover how to find or create your own side project, how to reach out and find other developers who may be interested in working with you, how to squeeze in that time to work on the project.</p>
 </p>
           <hr class="border-light mrgn-30-top">
-          <p>Carmen Long is a JavaScript developer in Oklahoma City. By day she writes hybrid mobile apps with Ionic, and by night she is the mastermind behind TwisterJS – a series of apps intended to teach tech to underprivileged kids.
-In her spare time, Carmen trains in the ways of The Force.</p>
+          <p>I am a passionate developer. Love working on open source and I spend most of my off work hours learning new and exciting frameworks and languages. I am a full stack engineer and work remotely for Made By Munsters a digital experience product agency.</p>
         </div>
       </div>
       <!-- /.Speaker 01 -->
@@ -97,6 +99,7 @@ In her spare time, Carmen trains in the ways of The Force.</p>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <script src="assets/js/bootstrap.min.js"></script> 
 <script src="assets/js/event01.js"></script> 
+<script src="assets/js/jqcloud-1.0.4.min.js"></script>
 
 <!-- Custom styles for Google Map --> 
 <script src="https://maps.googleapis.com/maps/api/js"></script> 
@@ -111,10 +114,19 @@ In her spare time, Carmen trains in the ways of The Force.</p>
 <!-- Background Video --> 
 <script src="assets/plugins/bgvideo/backgroundVideo.min.js"></script> 
 <script>
+  const companies = [
+    {text: "Libiny Solutions", weight: 3, link: "http://libiny.com/"},
+    {text: "codesy", weight: 2, link: "https://www.codesy.io"},
+    {text: "CaseStack", weight: 1, link: "http://casestack.io/"},
+    {text: "BigWing", weight: 3, link: "https://bigwing.com/"},
+    {text: "Station8", weight: 2, link: "http://station8branding.com/"},
+    {text: "SportSmith", weight: 2, link: "https://www.sportsmith.net/"}
+  ];
   $(document).ready(function() {
       $('#bgvideo').backgroundVideo({
           pauseVideoOnViewLoss: false
       });
+      $('#supporting-companies-cloud').jQCloud(companies);
   });
 </script>
 </body>

@@ -19,7 +19,8 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet" type="text/css">
   <link href="/assets/css/200ok.css" rel="stylesheet">
-  
+  <link href="/assets/css/jqcloud.css" rel="stylesheet">
+
 </head>
 
 <!-- Navigation -->
@@ -36,12 +37,11 @@
     <!-- navbar-collapse -->
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="btn btn-primary btn-lg" href="https://ti.to/techlahoma/200ok-2017">Tickets</a></li>
-        <!-- <li><a class="page-scroll" href="/#schedule">Schedule</a></li> -->
-        <!-- <li><a class="page-scroll" href="/#speakers">Speakers</a></li> -->
-        <li><a class="page-scroll" href="/#location">Location</a></li>
-        <!-- <li><a class="page-scroll" href="/#stay">Stay</a></li> -->
+        <li><a class="btn btn-primary btn-lg" href="https://ti.to/techlahoma/200ok-2017">Buy Tickets</a></li>
         <li><a class="page-scroll" href="/#sponsors">Sponsors</a></li>
+        <li><a class="page-scroll" href="/#speakers">Speakers</a></li>
+        <li><a class="page-scroll" href="/#location">Location</a></li>
+        <li><a class="page-scroll" href="/#schedule">Schedule</a></li>
         <li><a class="page-scroll" href="/#coc">Code of Conduct</a></li>
       </ul>
     </div>
@@ -61,28 +61,32 @@
       <div class="row">
         <div class="col-sm-3">
           <div class="speaker-item"> <a href="#">
-            <figure class="speaker accent-bg"> <img src="/assets/media/speakers/tatianarozzell.jpeg" alt="Speaker" class="img-responsive center-block" height="500" width="500">
+            <figure class="speaker accent-bg"> <img src="/assets/media/speakers/clementho.jpg" alt="Speaker" class="img-responsive center-block" height="500" width="500">
               <figcaption>
-                <p class="text-uppercase accent">Lightning Talk, 1:20pm-2:10pm</p>
+                <p class="text-uppercase accent">3:20pm Full Talk</p>
                 <!-- <p>04/10/2016 - 3PM</p> -->
               </figcaption>
             </figure>
             </a>
             <ul class="list-inline social-buttons">
-              <li> <a class="fa fa-twitter fa-lg" href="" target="_blank"></a> </li>
-              <li> <a class="fa fa-linkedin fa-lg" href="https://www.linkedin.com/in/tatiana-rozzell-214998bb" target="_blank"></a> </li>
-              <li> <a class="fa fa-github fa-lg" href="" target="_blank"></a> </li>
+              <li> <a class="fa fa-twitter fa-lg" href="https://twitter.com/clemmakesapps" target="_blank"></a></li> 
+              
+              <li> <a class="fa fa-github fa-lg" href="https://github.com/ClemMakesApps" target="_blank"></a></li> 
             </ul>
           </div>
         </div>
         <div class="col-sm-9">
-          <h2 class="accent"><i class="fa fa-star"></i> Tatiana Rozzell</h2>
-          <h3 class="talktitle">Developing Future Generations of Coders</h3>
+          <h2 class="accent"><i class="fa fa-star"></i> Clement Ho</h2>
+          <h3 class="talktitle">
+            <span style='color: #3281C4; font-weight: bold;'>Full-length Talk:</span>
+            Why should you contribute to open source?
+          </h3>
           <hr class="border-light mrgn-30-top">
-          <p class="lead accent"><p>Current school education status on Computer science, problems &amp; challenges, and what we can do about it. Share Girls Who Code story, and encourage to volunteer.</p>
+          <p class="lead accent"><p>The web development world is moving extremely fast. A lot of it can be attributed to the open source community. Your job/company environment can either help keep you with the momentum or slow you down. Not being able to keep up with the rapid pace could have the potential of making your skills less relevant and put your career at risk.</p>
+<p>In this talk, I will explain why contributing to open source is the answer to helping you keep up with rapidly evolving web world and what everyone can hope to achieve if all developers contributed to open source.</p>
 </p>
           <hr class="border-light mrgn-30-top">
-          <p>Founder and CEO of Learn To Code. Founder and Director of Girls Who Code Tulsa.</p>
+          <p>Clement is a frontend engineer at GitLab. He is a maintainer of GitLab's frontend code and a merge request coach for community contributed code. Prior to GitLab, he worked at HP and received a CIO Excellence award. He also had a brief stint as a cofounder of a startup.</p>
         </div>
       </div>
       <!-- /.Speaker 01 -->
@@ -96,6 +100,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <script src="assets/js/bootstrap.min.js"></script> 
 <script src="assets/js/event01.js"></script> 
+<script src="assets/js/jqcloud-1.0.4.min.js"></script>
 
 <!-- Custom styles for Google Map --> 
 <script src="https://maps.googleapis.com/maps/api/js"></script> 
@@ -110,10 +115,19 @@
 <!-- Background Video --> 
 <script src="assets/plugins/bgvideo/backgroundVideo.min.js"></script> 
 <script>
+  const companies = [
+    {text: "Libiny Solutions", weight: 3, link: "http://libiny.com/"},
+    {text: "codesy", weight: 2, link: "https://www.codesy.io"},
+    {text: "CaseStack", weight: 1, link: "http://casestack.io/"},
+    {text: "BigWing", weight: 3, link: "https://bigwing.com/"},
+    {text: "Station8", weight: 2, link: "http://station8branding.com/"},
+    {text: "SportSmith", weight: 2, link: "https://www.sportsmith.net/"}
+  ];
   $(document).ready(function() {
       $('#bgvideo').backgroundVideo({
           pauseVideoOnViewLoss: false
       });
+      $('#supporting-companies-cloud').jQCloud(companies);
   });
 </script>
 </body>
