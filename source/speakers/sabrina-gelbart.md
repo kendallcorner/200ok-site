@@ -5,7 +5,7 @@ company: LeadCliq
 twitter: https://twitter.com/sgelbart
 linkedin: https://www.linkedin.com/in/sabrina-gelbart-b3795713
 github: https://github.com/sgelbart
-photo: /assets/media/speakers/sabrinagelbart.jpg
+photo: /assets-2016/media/speakers/sabrinagelbart.jpg
 time: Lightning Talk, 1:20pm-2:10pm
 lightning: true
 talk: "What's goin' on on your app: Event Tracking / User Tracking / Analytics - goals and methods"

@@ -5,7 +5,7 @@ company: Skuchain
 twitter: https://twitter.com/blueskygraber
 linkedin: https://www.linkedin.com/in/jaygraber
 github: https://github.com/juliagra
-photo: /assets/media/speakers/jaygraber.png
+photo: /assets-2016/media/speakers/jaygraber.png
 time: Lightning Talk, 1:20pm-2:10pm
 lightning: true
 talk: Bootcamps and Learning How to Code

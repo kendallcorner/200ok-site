@@ -4,7 +4,7 @@ position: Data Scientist
 company: Exaptive
 twitter: http://twitter.com/frankdevans
 linkedin: https://www.linkedin.com/in/frankdevans
-photo: /assets/media/speakers/frankevans.jpeg
+photo: /assets-2016/media/speakers/frankevans.jpeg
 time: Lightning Talk, 1:20pm-2:10pm
 lightning: true
 talk: How to Get Started in Data Science from Scratch

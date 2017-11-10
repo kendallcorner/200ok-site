@@ -7,7 +7,7 @@ linkedin: https://www.linkedin.com/in/prusakov
 github:
 talk: Privacy in the Digital Age, Can you Keep a Secret?
 time: 11:00am-11:50am
-photo: /assets/media/speakers/janeprusakova.jpg
+photo: /assets-2016/media/speakers/janeprusakova.jpg
 bio: "I am a software architect and developer, an Agile proponent, and a great believer in building valuable software that users will love to use. I build large back-end systems that require high-performance and high-reliability, and process vast amounts of data.
 I believe that successful software is created by strong teams, requires good engineering practices, and evolves in close collaboration with the users. As a Principal Consultant for Improving Enterprises, I work with distributed teams on distributed software. As a consulting team, we focus on technical excellence, close contact with the client, and rapid iterations."
 ---

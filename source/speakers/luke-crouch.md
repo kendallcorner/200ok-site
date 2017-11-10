@@ -5,7 +5,7 @@ company: Mozilla
 twitter: https://twitter.com/groovecoder
 linkedin: http://in.linkedin.com/in/groovecoder
 github: https://github.com/groovecoder
-photo: /assets/media/speakers/lukecrouch.jpeg
+photo: /assets-2016/media/speakers/lukecrouch.jpeg
 time: Lightning Talk, 1:20pm-2:10pm
 lightning: true
 talk: Fixing Open Source Bugs

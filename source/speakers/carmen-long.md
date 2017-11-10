@@ -5,7 +5,7 @@ company: RaiseMore
 twitter: http://twitter.com/carmalou
 linkedin: https://www.linkedin.com/in/carmen-long-77382376
 github: https://github.com/carmalou
-photo: /assets/media/speakers/carmenlong.jpeg
+photo: /assets-2016/media/speakers/carmenlong.jpeg
 time: Lightning Talk, 1:20pm-2:10pm
 lightning: true
 talk: Building your first Ionic App in 5 Minutes

@@ -5,7 +5,7 @@ company: The Alchemedia Project
 twitter: http://twitter.com/mykebates
 linkedin: https://www.linkedin.com/in/mykebates
 github: https://github.com/mykebates/
-photo: /assets/media/speakers/mykebates.jpeg
+photo: /assets-2016/media/speakers/mykebates.jpeg
 time: Lightning Talk, 1:20pm-2:10pm
 lightning: true
 talk: "Rapid Prototyping: Build Rome in an Hour"

@@ -2,7 +2,7 @@
 speaker: Carlos Angon
 twitter: https://twitter.com/monster_bo1
 github: https://github.com/carlosangon
-photo: /assets/media/speakers/carlosangon.jpeg
+photo: /assets-2016/media/speakers/carlosangon.jpeg
 talk: Continuous Self-Optimization
 time: Lightning Talk, 1:20pm-2:10pm
 lightning: true
