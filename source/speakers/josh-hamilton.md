@@ -4,7 +4,7 @@ position: Full Stack Engineer
 company: Made By Munsters
 twitter: https://twitter.com/nearbycoder
 github: https://github.com/nearbycoder
-photo: /assets/media/speakers/joshhamilton.png
+photo: /assets-2017/media/speakers/joshhamilton.png
 time: Lightning Talk
 lightning: true
 talk: Side Projects - The Pursuit of Happyness

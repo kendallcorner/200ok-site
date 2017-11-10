@@ -4,7 +4,7 @@ position: Web Developer
 company: Mozilla
 twitter: https://twitter.com/groovecoder
 github: https://github.com/groovecoder
-photo: /assets/media/speakers/lukecrouch.jpeg
+photo: /assets-2017/media/speakers/lukecrouch.jpeg
 time: Lightning Talk
 lightning: true
 talk: Fix 5 Common Web Security Errors in 5 Minutes

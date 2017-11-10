@@ -4,7 +4,7 @@ position: Mobile Developer
 company: NXB Mobile
 twitter: https://twitter.com/CaitlinPlusPlus
 github: ""
-photo: /assets/media/speakers/caitlinstewart2.jpg
+photo: /assets-2017/media/speakers/caitlinstewart2.jpg
 time: Lightning Talk
 lightning: true
 talk: "All your user base are belong to us: Website localization"

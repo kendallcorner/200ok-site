@@ -6,7 +6,7 @@ twitter: https://twitter.com/nodebotanist
 github: https://github.com/nodebotanist
 talk: Severless Architecture in Node.JS
 time: 11:00am Full Talk
-photo: /assets/media/speakers/kassandraperch.jpg
+photo: /assets-2017/media/speakers/kassandraperch.jpg
 bio: "a.k.a the Nodebotanist. Developer Relations Engineer at IOpipe. Serverless aficionado, bot builder, NodeBots author/addict. Austinite. Electrical Engineering student. They/them preferred pronouns. "
 ---
 We keep hearing about this 'serverless' movement. Didn't we just spend years fighting to make Node.JS relevant on servers? What is serverless, and how can it help us?

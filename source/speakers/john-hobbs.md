@@ -4,7 +4,7 @@ position: Software Engineer
 company: Flywheel
 twitter: https://twitter.com/jmhobbs
 github: https://github.com/jmhobbs
-photo: /assets/media/speakers/johnhobbs.jpg
+photo: /assets-2017/media/speakers/johnhobbs.jpg
 talk: Kubernetes Basics
 time: Lightning Talk
 lightning: true

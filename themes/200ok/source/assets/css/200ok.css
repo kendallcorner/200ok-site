@@ -60,3 +60,15 @@ article li {
     padding: 0.5em !important;
   }
 }
+
+#archive {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1600;
+    background: #dd0000;
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 2rem;
+}

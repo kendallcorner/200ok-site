@@ -4,7 +4,7 @@ position: Backend Student
 company: Turing School
 twitter: https://twitter.com/BethKnight1234
 github: https://github.com/BethKnight1234
-photo: /assets/media/speakers/bethknight.jpg
+photo: /assets-2017/media/speakers/bethknight.jpg
 time: Lightning Talk
 lightning: true
 talk: "Ditch the Storyboard"

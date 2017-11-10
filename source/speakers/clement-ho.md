@@ -2,7 +2,7 @@
 speaker: Clement Ho
 twitter: https://twitter.com/clemmakesapps
 gitlab: https://gitlab.com/clemmakesapps
-photo: /assets/media/speakers/clementho.jpg
+photo: /assets-2017/media/speakers/clementho.jpg
 talk: Why should you contribute to open source?
 time: 3:20pm Full Talk
 position: Frontend Engineer
